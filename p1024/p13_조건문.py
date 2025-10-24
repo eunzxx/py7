@@ -28,8 +28,40 @@ else:
 # 입력된 숫자가 짝수인지 홀수인지 출력하시오.
 # 짝수입니다. 홀수입니다.
 # num%2 == 0
-num=int(input("숫자를 입력하세요."))
-if((num%2)==1):
-    print("홀수입니다.")
+#num=int(input("숫자를 입력하세요."))
+#if((num%2)==1):
+#    print("홀수입니다.")
+#else:
+#    print("짝수입니다.")
+
+# 내부모듈 (=내장모듈, 파이썬에서 제공해주는 모듈. **외워두기**)
+import datetime
+now = datetime.datetime.now()
+print(now)
+
+print(now.year,"년도")
+print(now.month,"월")
+print(now.day,"일")
+print(now.hour,"시")
+print(now.minute,"분")
+print(now.second,"초")
+
+#입력한 주민번호의 월을 파악해서 현재 날짜와 같은 월이면
+#이벤트 대상입니다. or not 이벤트 대상이 아닙니다. 출력하시오.
+
+jumin = input("주민번호를 입력하세요.")
+today = datetime.datetime.now()
+if(int(jumin[2:4])==(today.month)):
+    print("이벤트 대상입니다.")
 else:
-    print("짝수입니다.")
+    print("이벤트 대상이 아닙니다.")
+
+
+
+
+
+# 포맷(**참고**)
+#n = "03"
+#print(int(n))
+#n2 = 3
+#print("%02d" % n2)
