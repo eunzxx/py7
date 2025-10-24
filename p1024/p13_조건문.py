@@ -57,7 +57,12 @@ else:
     print("이벤트 대상이 아닙니다.")
 
 
-
+str1 = "abcdefg"
+# [시작번호:끝번호:스탭]
+print(str1[1:6:2])  #bdf
+print(str1[:5])     #abcde
+print(str1[5:2:-1]) #fed
+print(str1[::-1])   #gfedcba
 
 
 # 포맷(**참고**)
